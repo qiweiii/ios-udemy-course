@@ -9,7 +9,8 @@
 import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate{
-    let verticalPipeGap = 150.0
+    // originally 150, changed to 180 by qiwei
+    let verticalPipeGap = 180.0
     
     var bird:SKSpriteNode!
     var skyColor:SKColor!
