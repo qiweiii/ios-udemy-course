@@ -122,20 +122,15 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-th-c5K" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="571.5" width="374" height="246.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOi-8M-5fW">
-                                                <rect key="frame" x="165" y="113" width="44" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygX-e3-mvp">
-                                                <rect key="frame" x="112" y="167" width="150" height="4"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ygX-e3-mvp">
+                                                <rect key="frame" x="0.0" y="121" width="374" height="4"/>
                                             </progressView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="pOi-8M-5fW" firstAttribute="centerX" secondItem="nJN-th-c5K" secondAttribute="centerX" id="EGP-Ub-izW"/>
-                                            <constraint firstItem="pOi-8M-5fW" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="MAO-uu-rTS"/>
+                                            <constraint firstItem="ygX-e3-mvp" firstAttribute="leading" secondItem="nJN-th-c5K" secondAttribute="leading" id="0b4-rI-zi8"/>
+                                            <constraint firstItem="ygX-e3-mvp" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="Lan-fx-1om"/>
+                                            <constraint firstAttribute="trailing" secondItem="ygX-e3-mvp" secondAttribute="trailing" id="QEU-E4-lOx"/>
+                                            <constraint firstItem="ygX-e3-mvp" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="aWw-b3-cS8"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -152,7 +147,7 @@
                     </view>
                     <connections>
                         <outlet property="progressBar" destination="ygX-e3-mvp" id="axC-fx-dw6"/>
-                        <outlet property="titleLabel" destination="pOi-8M-5fW" id="Xcs-eW-irp"/>
+                        <outlet property="titleLabel" destination="XLm-5r-pSP" id="cvp-7u-PUF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
