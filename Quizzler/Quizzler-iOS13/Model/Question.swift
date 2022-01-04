@@ -17,5 +17,3 @@ struct Question {
         answer = a
     }
 }
-
-    
